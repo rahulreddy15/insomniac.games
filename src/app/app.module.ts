@@ -12,6 +12,11 @@ import { SupportComponent } from './support/support.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterOneComponent } from './footer-one/footer-one.component';
 import { FooterTwoComponent } from './footer-two/footer-two.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { VideoEmbedComponent } from './video-embed/video-embed.component';
+import { CardsComponentComponent } from './cards-component/cards-component.component';
+import { FeaturedComponent } from './featured/featured.component';
+import { VisionComponent } from './vision/vision.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +29,16 @@ import { FooterTwoComponent } from './footer-two/footer-two.component';
     SupportComponent,
     NavBarComponent,
     FooterOneComponent,
-    FooterTwoComponent
+    FooterTwoComponent,
+    VideoEmbedComponent,
+    CardsComponentComponent,
+    FeaturedComponent,
+    VisionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
