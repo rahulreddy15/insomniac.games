@@ -1,1 +1,142 @@
-<p>support works!</p>
+<head>
+    <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/theming_v1_support-e05586b61178dcde2a13a3d323525a18.css" />
+    <link rel="stylesheet" type="text/css" href="//p13.zdassets.com/hc/theming_assets/221378/175084/style.css?digest=8371991759885">
+</head>
+<div>
+
+  <header class="header">
+  <div class="logo">
+    <a title="Home" href="/hc/en-us">
+      <img src="//theme.zdassets.com/theme_assets/221378/609b15c80dea5331aa38036efbb359515e065a38.png" alt="Insomniac Games Support Help Center home page">
+    </a>
+  </div>
+  <div class="nav-wrapper">
+    <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="Toggle navigation menu"></span>
+    <nav class="user-nav" id="user-nav">
+      
+      <a class="submit-a-request" routerLink="/contact-us" href="/hc/en-us/requests/new">Contact Us</a>
+    </nav>
+      <a class="login" data-auth-action="signin" role="button" rel="nofollow" title="Opens a dialog">Sign in</a>
+      <!-- <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button> -->
+
+  </div>
+</header>
+
+
+  <main role="main">
+    <section class="section hero">
+  <div class="hero-inner">
+    <form role="search" class="search search-full" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" /></form>
+  </div>
+</section>
+
+<div class="container">
+  <section class="section home-intro">
+    <h1>Knowledge Base</h1>
+    <p>Welcome to the Insomniac Games Knowledge Base. Please select a game or series below to get started. You can also use the Search box above. If at any point, you can't find the answer you are looking for, submit a request using the <a href="/hc/en-us/requests/new">Contact Us</a> link above.
+  </section>
+
+
+  <section class="section knowledge-base">
+    <section class="categories blocks" >
+        
+        <!-- <app-support-cards-component *ngFor="let x of support"
+          link="{{ x.link }}"
+          img="{{ x.img }}"
+        >
+          loading...
+        </app-support-cards-component> -->
+
+      <app-support-cards-component
+      >
+        loading...
+      </app-support-cards-component>
+    </section>
+
+    
+  </section>
+
+  
+
+  <section class="section activity">
+    
+  </section>
+</div>
+  </main>
+
+  <app-footer-three></app-footer-three>
+  
+  
+</div>
+
+
+
+<ng-template #content let-modal>
+
+
+
+
+        
+    <div class="modal-header">
+      <h2 class="title" id="signin_title">
+        Sign in to Insomniac Games Support
+      </h2>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <!-- <form> -->
+        <div class="services internal">
+            <form autocomplete="off" id="login-form" class="" action="https://insomniac.zendesk.com/access/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="HHAjrP/0DX18FIp+KUcw5AK82dJg7mL+aQeMYy3WVG0=" />
+              <input type="hidden" name="return_to_on_failure" id="return_to_on_failure" value="/auth/v2/login/signin?return_to=https%3A%2F%2Fsupport.insomniac.games%2Fhc%2Fen-us%2Frequests%2Fnew&amp;theme=hc&amp;locale=en-us&amp;brand_id=175084&amp;auth_origin=175084%2Ctrue%2Ctrue&amp;browser=chrome" />
+              <input type="hidden" name="return_to" id="return_to" value="https://support.insomniac.games/auth/v2/login/signed_in?auth_origin=175084%2Ctrue%2Ctrue&amp;brand_id=175084&amp;theme=hc" />
+              <input type="hidden" name="brand_id" id="brand_id" value="175084" />
+              <input type="hidden" name="theme" id="theme" value="hc" />
+              <input type="hidden" name="auth_origin" id="auth_origin" value="175084,true,true" />
+              <input type="hidden" name="form_origin" id="form_origin" value="hc" />
+              <div class="credentials">
+                <label for="user_email">Email</label>
+                <input autofocus="autofocus" autocomplete="on" required="required" type="email" name="user[email]" id="user_email" />
+                <label for="user_password">Password</label>
+                <input autocomplete="off" required="required" type="password" name="user[password]" id="user_password" />
+              </div>
+       
+  
+              <div class="clear"></div>
+  
+              <input type="submit" name="commit" value="Sign in" id="sign-in-submit-button" class="c-btn c-btn--primary auth-actions" data-disable-with="Sign in" />
+  </form>
+            <div class="clear"></div>
+          </div>
+      <!-- </form> -->
+
+
+
+
+
+      
+
+
+
+
+    </div>
+    <div class="modal-footer">
+
+      <div class="footnotes">
+        <div class="sign_up question">
+          <span class="question-text">New to Insomniac Games Support?</span>
+          <a class="auth-actions" href="https://insomniac.zendesk.com/auth/v2/login/registration?auth_origin=175084%2Ctrue%2Ctrue&amp;brand_id=175084&amp;return_to=https%3A%2F%2Fsupport.insomniac.games%2Fhc%2Fen-us%2Frequests%2Fnew&amp;theme=hc">Sign up</a>
+        </div>
+
+        <p class="get_password question">
+        <span class="question-text">Have you emailed us?</span>
+        <a class="auth-actions" href="https://insomniac.zendesk.com/auth/v2/login/password_reset?auth_origin=175084%2Ctrue%2Ctrue&amp;brand_id=175084&amp;return_to=https%3A%2F%2Fsupport.insomniac.games%2Fhc%2Fen-us%2Frequests%2Fnew&amp;theme=hc">Get a password</a>
+        </p>
+
+        <p>If you've communicated with our support staff through email previously, you're already registered. <br /> You probably don't have a password yet, though.</p>
+    </div>
+    </div>
+
+    
+
+
+  </ng-template>

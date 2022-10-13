@@ -17,6 +17,10 @@ import { VideoEmbedComponent } from './video-embed/video-embed.component';
 import { CardsComponentComponent } from './cards-component/cards-component.component';
 import { FeaturedComponent } from './featured/featured.component';
 import { VisionComponent } from './vision/vision.component';
+import { SupportCardsComponentComponent } from './support-cards-component/support-cards-component.component';
+import { FooterThreeComponent } from './footer-three/footer-three.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -33,12 +37,16 @@ import { VisionComponent } from './vision/vision.component';
     VideoEmbedComponent,
     CardsComponentComponent,
     FeaturedComponent,
-    VisionComponent
+    VisionComponent,
+    SupportCardsComponentComponent,
+    FooterThreeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
