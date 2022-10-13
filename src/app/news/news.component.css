@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "sw-icon-font";
+    src:url("https://insomniacgames.wpenginepowered.com/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.eot?ver=4.3.0");
+    src:url("https://insomniacgames.wpenginepowered.com/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.eot?ver=4.3.0#iefix") format("embedded-opentype"),
+    url("https://insomniacgames.wpenginepowered.com/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.woff?ver=4.3.0") format("woff"),
+    url("https://insomniacgames.wpenginepowered.com/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.ttf?ver=4.3.0") format("truetype"),
+    url("https://insomniacgames.wpenginepowered.com/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.svg?ver=4.3.0#1445203416") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display:block;
+}
