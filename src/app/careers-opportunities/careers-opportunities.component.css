@@ -1,0 +1,150 @@
+#careers-subnav {
+    background-color: #48707A;
+    margin-top: -7px;
+}
+.btn-floating i, .center, .center-align, .material-tooltip, .tabs .tab, span.badge {
+    text-align: center;
+}
+
+#careers-subnav a.active, #careers-subnav a:hover, #game-social a {
+    color: #FFF;
+}
+
+#careers-subnav a {
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 21px;
+    line-height: 1.3125rem;
+    color: #78B1BB;
+    transition: .25s;
+}
+#career-opportunities {
+    color: #FFF;
+    padding: 50px 0;
+    background-size: cover;
+    background-position: top center;
+}
+
+#career-opportunities ul {
+    background-color: rgba(255,255,255,.8);
+    border-radius: 10px;
+}
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.collapsible {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin: 0.5rem 0 1rem;
+}
+
+.btn, .btn-custom, .btn-floating, .btn-large, .button, .card, .card-panel, .collapsible, .dropdown-content, .side-nav, .toast, .z-depth-1, button, nav {
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
+}
+
+@media only screen and (min-width: 601px){
+    .row .col.m6 {
+        width: 50%;
+    }
+}
+
+.row .col {
+    float: left;
+    padding: 0 0.75rem;
+    min-height: 1px;
+}
+
+.row .col.l1, .row .col.l10, .row .col.l11, .row .col.l12, .row .col.l2, .row .col.l3, .row .col.l4, .row .col.l5, .row .col.l6, .row .col.l7, .row .col.l8, .row .col.l9, .row .col.m1, .row .col.m10, .row .col.m11, .row .col.m12, .row .col.m2, .row .col.m3, .row .col.m4, .row .col.m5, .row .col.m6, .row .col.m7, .row .col.m8, .row .col.m9, .row .col.s1, .row .col.s10, .row .col.s11, .row .col.s12, .row .col.s2, .row .col.s3, .row .col.s4, .row .col.s5, .row .col.s6, .row .col.s7, .row .col.s8, .row .col.s9, .row .col.xl1, .row .col.xl10, .row .col.xl11, .row .col.xl12, .row .col.xl2, .row .col.xl3, .row .col.xl4, .row .col.xl5, .row .col.xl6, .row .col.xl7, .row .col.xl8, .row .col.xl9 {
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+#career-opportunities ul li .collapsible-header {
+    color: #48707A;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.collapsible-header {
+    display: block;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#career-opportunities ul li .collapsible-body {
+    color: #404040;
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.collapsible-body {
+    display: none;
+    border-bottom: 1px solid #ddd;
+    padding: 2rem;
+}
+
+.collapsible-body, .row .col, html, span.badge {
+    box-sizing: border-box;
+}
+#career-opportunities ul li .collapsible-header {
+    color: #48707A;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.collapsible-header {
+    display: block;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.collapsible-header i {
+    width: 2rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+img.materialboxed {
+    max-width: none;
+    width: 100%;
+}
+
+.materialboxed {
+    display: block;
+    cursor: zoom-in;
+    position: relative;
+    transition: opacity .4s;
+    -webkit-backface-visibility: hidden;
+}
+
+.container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}

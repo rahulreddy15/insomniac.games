@@ -35,10 +35,6 @@ import { NewsMainContentComponent } from './news-main-content/news-main-content.
 import { NewsFeaturedArticleComponent } from './news-featured-article/news-featured-article.component';
 import { NewsRecentComponent } from './news-recent/news-recent.component';
 import { NewsCategoriesComponent } from './news-categories/news-categories.component';
-import { CommunityJoinInComponent } from './community-join-in/community-join-in.component';
-import { CommunityTwitchComponent } from './community-twitch/community-twitch.component';
-import { CommunityNewsComponent } from './community-news/community-news.component';
-import { CommunityFollowLatestComponent } from './community-follow-latest/community-follow-latest.component';
 
 @NgModule({
   declarations: [
@@ -72,11 +68,7 @@ import { CommunityFollowLatestComponent } from './community-follow-latest/commun
     NewsMainContentComponent,
     NewsFeaturedArticleComponent,
     NewsRecentComponent,
-    NewsCategoriesComponent,
-    CommunityJoinInComponent,
-    CommunityTwitchComponent,
-    CommunityNewsComponent,
-    CommunityFollowLatestComponent
+    NewsCategoriesComponent
   ],
   imports: [
     BrowserModule,

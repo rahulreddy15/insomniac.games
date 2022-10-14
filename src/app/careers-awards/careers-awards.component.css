@@ -1,0 +1,21 @@
+.container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#careers-awards{
+    padding: 50px 0;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.awards-slideshow{
+    display: flex;
+    overflow: auto;
+}

@@ -1,63 +1,90 @@
 <head>
-  <link rel="stylesheet" media="all"
-    href="//static.zdassets.com/hc/assets/theming_v1_support-e05586b61178dcde2a13a3d323525a18.css" />
-  <link rel="stylesheet" type="text/css"
-    href="//p13.zdassets.com/hc/theming_assets/221378/175084/style.css?digest=8371991759885">
+    <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/theming_v1_support-e05586b61178dcde2a13a3d323525a18.css" />
+    <link rel="stylesheet" type="text/css" href="//p13.zdassets.com/hc/theming_assets/221378/175084/style.css?digest=8371991759885">
 </head>
-
 <div>
 
   <header class="header">
-    <div class="logo">
-      <a title="Home" href="/hc/en-us">
-        <img src="//theme.zdassets.com/theme_assets/221378/609b15c80dea5331aa38036efbb359515e065a38.png"
-          alt="Insomniac Games Support Help Center home page">
-      </a>
-    </div>
-    <div class="nav-wrapper">
-      <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false"
-        aria-label="Toggle navigation menu"></span>
-      <nav class="user-nav" id="user-nav">
-
-        <a class="submit-a-request" routerLink="/contact-us" href="/hc/en-us/requests/new">Contact Us</a>
-      </nav>
-      <a routerLink="/signin" class="login" data-auth-action="signin" role="button" rel="nofollow"
-        title="Opens a dialog">Sign in</a>
+  <div class="logo">
+    <a title="Home" href="/hc/en-us">
+      <img src="//theme.zdassets.com/theme_assets/221378/609b15c80dea5331aa38036efbb359515e065a38.png" alt="Insomniac Games Support Help Center home page">
+    </a>
+  </div>
+  <div class="nav-wrapper">
+    <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="Toggle navigation menu"></span>
+    <nav class="user-nav" id="user-nav">
+      
+      <a class="submit-a-request" routerLink="/contact-us" href="/hc/en-us/requests/new">Contact Us</a>
+    </nav>
+      <a routerLink="/signin" class="login" data-auth-action="signin" role="button" rel="nofollow" title="Opens a dialog">Sign in</a>
       <!-- <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button> -->
 
-    </div>
-  </header>
+  </div>
+</header>
+
 
   <main role="main">
-
     <section class="section hero">
-      <div class="hero-inner">
-        <form role="search" class="search search-full" data-search="" data-instant="true" autocomplete="off"
-          action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden"
-            value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search"
-            autocomplete="off" aria-label="Search" /></form>
-      </div>
+  <div class="hero-inner">
+    <form role="search" class="search search-full" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" /></form>
+  </div>
+</section>
+
+<div class="container">
+  <section class="section home-intro">
+    <h1>Knowledge Base</h1>
+    <p>Welcome to the Insomniac Games Knowledge Base. Please select a game or series below to get started. You can also use the Search box above. If at any point, you can't find the answer you are looking for, submit a request using the <a href="/hc/en-us/requests/new">Contact Us</a> link above.
+  </section>
+
+
+  <section class="section knowledge-base">
+    <section class="categories blocks" >
+        
+        <!-- <app-support-cards-component *ngFor="let x of support"
+          link="{{ x.link }}"
+          img="{{ x.img }}"
+        >
+          loading...
+        </app-support-cards-component> -->
+
+      <app-support-cards-component
+      >
+        loading...
+      </app-support-cards-component>
     </section>
 
-    <div class="container">
+    
+  </section>
 
-      <section class="section home-intro">
-        <h1>Knowledge Base</h1>
-        <p>Welcome to the Insomniac Games Knowledge Base. Please select a game or series below to get started. You can
-          also use the Search box above. If at any point, you can't find the answer you are looking for, submit a
-          request using the <a href="/hc/en-us/requests/new">Contact Us</a> link above.
-      </section>
+  
 
-      <section class="section knowledge-base">
-        <section class="categories blocks">
-          <app-support-cards-component>
-            loading...
-          </app-support-cards-component>
-        </section>
-      </section>
-
-    </div>
+  <section class="section activity">
+    
+  </section>
+</div>
   </main>
 
   <app-footer-three></app-footer-three>
+  
+  
 </div>
+
+
+
+
+
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Modal title</h4>
+      <h2 class="title" id="signin_title">
+        Sign in to Insomniac Games Support
+      </h2>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <app-sign-in></app-sign-in>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+  </ng-template>

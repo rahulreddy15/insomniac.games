@@ -1,203 +1,247 @@
+
 <head>
-  <link rel="stylesheet" type="text/css"
-    href="//p13.zdassets.com/hc/theming_assets/221378/175084/style.css?digest=8371991759885">
+    <link rel="stylesheet" type="text/css" href="//p13.zdassets.com/hc/theming_assets/221378/175084/style.css?digest=8371991759885">
 
-  <link rel="shortcut icon" type="image/x-icon"
-    href="//theme.zdassets.com/theme_assets/221378/4fd3d8b32e38160e39dc7b103d38e6b8aa1cdce6.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/221378/4fd3d8b32e38160e39dc7b103d38e6b8aa1cdce6.png" />
 </head>
-
 <div class="">
+  
+  
 
   <header class="header">
-    <div class="logo">
-      <a title="Home" href="/hc/en-us">
-        <img src="//theme.zdassets.com/theme_assets/221378/609b15c80dea5331aa38036efbb359515e065a38.png"
-          alt="Insomniac Games Support Help Center home page">
-      </a>
-    </div>
-    <div class="nav-wrapper">
-      <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false"
-        aria-label="Toggle navigation menu"></span>
-      <nav class="user-nav" id="user-nav">
+  <div class="logo">
+    <a title="Home" href="/hc/en-us">
+      <img src="//theme.zdassets.com/theme_assets/221378/609b15c80dea5331aa38036efbb359515e065a38.png" alt="Insomniac Games Support Help Center home page">
+    </a>
+  </div>
+  <div class="nav-wrapper">
+    <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="Toggle navigation menu"></span>
+    <nav class="user-nav" id="user-nav">
+      
+      <a class="submit-a-request" routerLink="/contact-us" href="/hc/en-us/requests/new">Contact Us</a>
+    </nav>
+      <a class="login" routerLink="/signin" data-auth-action="signin" role="button" rel="nofollow" title="Opens a dialog">Sign in</a>
+  </div>
+</header>
 
-        <a class="submit-a-request" routerLink="/contact-us" href="/hc/en-us/requests/new">Contact Us</a>
-      </nav>
-      <a class="login" routerLink="/signin" data-auth-action="signin" role="button" rel="nofollow"
-        title="Opens a dialog">Sign in</a>
-    </div>
-  </header>
 
   <main role="main">
     <div class="container-divider"></div>
-    <div class="container">
-      <nav class="sub-nav">
-        <ol class="breadcrumbs">
+<div class="container">
+  <nav class="sub-nav">
+    <ol class="breadcrumbs">
+  
+    <li title="Insomniac Games Support">
+      
+        <a href="/hc/en-us">Insomniac Games Support</a>
+      
+    </li>
+  
+    <li title="Submit a request">
+      
+        Submit a request
+      
+    </li>
+  
+</ol>
 
-          <li title="Insomniac Games Support">
+    <form role="search" class="search" data-search="" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" /></form>
+  </nav>
 
-            <a href="/hc/en-us">Insomniac Games Support</a>
+  <h1>
+    Submit a Request
+    
+  </h1>
 
-          </li>
-
-          <li title="Submit a request">
-
-            Submit a request
-
-          </li>
-
-        </ol>
-
-        <form role="search" class="search" data-search="" action="/hc/en-us/search" accept-charset="UTF-8" method="get">
-          <input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="search" name="query"
-            id="query" placeholder="Search" aria-label="Search" />
-        </form>
-      </nav>
-
-      <h1>
-        Submit a Request
-
-      </h1>
-
-      <div class="form">
-        <form id="new_request" class="request-form">
-          <!-- <input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" />
+  <div class="form">
+    <form id="new_request" class="request-form" >
+        <!-- <input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" />
         <input type="hidden" name="authenticity_token" value="" /> -->
 
-          <input type="hidden" name="request[ticket_form_id]" id="request_ticket_form_id" value="360000473991"
-            autocomplete="off" />
 
-          <div class="form-field string required request_anonymous_requester_email"><label
-              for="request_anonymous_requester_email">Your email address</label>
-            <input type="text" id="email" name="request[anonymous_requester_email]"
-              id="request_anonymous_requester_email" aria-required="true" />
-          </div>
 
-          <div class="form-field string  required  request_custom_fields_360020880831">
-            <label id="request_custom_fields_360020880831_label" for="request_custom_fields_360020880831">What do you
-              need help with?</label>
-            <select type="text" name="request[custom_fields][360020880831]" id="request_custom_fields_360020880831"
-              autocomplete="off"
-              data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Game Support&quot;,&quot;value&quot;:&quot;game_support&quot;},{&quot;label&quot;:&quot;General Inquiry&quot;,&quot;value&quot;:&quot;general_inquiry&quot;},{&quot;label&quot;:&quot;Accessibility&quot;,&quot;value&quot;:&quot;accessibility&quot;}]"
-              aria-required="true" aria-labelledby="request_custom_fields_360020880831_label">
-              <option value="">-</option>
-              <option value="1">Game Support</option>
-              <option value="2">General Enquiry</option>
-              <option value="2">Accessibility</option>
-            </select>
-          </div>
 
-          <!-- <div class="form-field string  required  request_custom_fields_21947402" >
-      <label id="request_custom_fields_21947402_label" for="request_custom_fields_21947402">Game</label>
-      <input type="hidden" name="request[custom_fields][21947402]" id="request_custom_fields_21947402" autocomplete="off" data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Marvel&#39;s Spider-Man Remastered PC&quot;,&quot;value&quot;:&quot;marvel_s_spider-man_remastered_pc&quot;},{&quot;label&quot;:&quot;Ratchet \u0026 Clank: Rift Apart&quot;,&quot;value&quot;:&quot;ratchet___clank__rift_apart&quot;},{&quot;label&quot;:&quot;Marvel&#39;s Spider-Man: Miles Morales PS4/PS5&quot;,&quot;value&quot;:&quot;marvel_s_spider-man__miles_morales&quot;},{&quot;label&quot;:&quot;Marvel&#39;s Spider-Man Remastered PS5&quot;,&quot;value&quot;:&quot;marvel_s_spider-man_remastered&quot;},{&quot;label&quot;:&quot;Marvel&#39;s Spider-Man (PS4)&quot;,&quot;value&quot;:&quot;spider_man&quot;},{&quot;label&quot;:&quot;Ratchet \u0026 Clank (2016)&quot;,&quot;value&quot;:&quot;ratchet&quot;},{&quot;label&quot;:&quot;Sunset Overdrive&quot;,&quot;value&quot;:&quot;sunset&quot;},{&quot;label&quot;:&quot;Stormland&quot;,&quot;value&quot;:&quot;stormland&quot;},{&quot;label&quot;:&quot;The Unspoken&quot;,&quot;value&quot;:&quot;unspoken&quot;},{&quot;label&quot;:&quot;Edge of Nowhere&quot;,&quot;value&quot;:&quot;edge&quot;},{&quot;label&quot;:&quot;Feral Rites&quot;,&quot;value&quot;:&quot;feral&quot;},{&quot;label&quot;:&quot;Resistance&quot;,&quot;value&quot;:&quot;resistance&quot;},{&quot;label&quot;:&quot;Fuse&quot;,&quot;value&quot;:&quot;fuse&quot;},{&quot;label&quot;:&quot;Song of the Deep&quot;,&quot;value&quot;:&quot;song&quot;},{&quot;label&quot;:&quot;Seedling&quot;,&quot;value&quot;:&quot;seedling&quot;},{&quot;label&quot;:&quot;Strangelets&quot;,&quot;value&quot;:&quot;strangelets&quot;}]" aria-required="true" aria-labelledby="request_custom_fields_21947402_label" />
+  
+
+  <input type="hidden" name="request[ticket_form_id]" id="request_ticket_form_id" value="360000473991" autocomplete="off" />
+
+  <div class="form-field string required request_anonymous_requester_email"><label for="request_anonymous_requester_email">Your email address</label>
+<input type="text" id="email" name="request[anonymous_requester_email]" id="request_anonymous_requester_email" aria-required="true" />
+</div>
+
+  
+
+  
+    <div class="form-field string  required  request_custom_fields_360020880831" >
+      <label id="request_custom_fields_360020880831_label" for="request_custom_fields_360020880831">What do you need help with?</label>
+      <select type="text" name="request[custom_fields][360020880831]" id="request_custom_fields_360020880831" autocomplete="off" data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Game Support&quot;,&quot;value&quot;:&quot;game_support&quot;},{&quot;label&quot;:&quot;General Inquiry&quot;,&quot;value&quot;:&quot;general_inquiry&quot;},{&quot;label&quot;:&quot;Accessibility&quot;,&quot;value&quot;:&quot;accessibility&quot;}]" aria-required="true" aria-labelledby="request_custom_fields_360020880831_label" >
+        <option value="">-</option>
+        <option value="1">Game Support</option>
+        <option value="2">General Enquiry</option>
+        <option value="2">Accessibility</option>
+
+      </select>
+      
+      
     </div>
 
+    
+  
+    <!-- <div class="form-field string  required  request_custom_fields_21947402" >
+      <label id="request_custom_fields_21947402_label" for="request_custom_fields_21947402">Game</label>
+      <input type="hidden" name="request[custom_fields][21947402]" id="request_custom_fields_21947402" autocomplete="off" data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Marvel&#39;s Spider-Man Remastered PC&quot;,&quot;value&quot;:&quot;marvel_s_spider-man_remastered_pc&quot;},{&quot;label&quot;:&quot;Ratchet \u0026 Clank: Rift Apart&quot;,&quot;value&quot;:&quot;ratchet___clank__rift_apart&quot;},{&quot;label&quot;:&quot;Marvel&#39;s Spider-Man: Miles Morales PS4/PS5&quot;,&quot;value&quot;:&quot;marvel_s_spider-man__miles_morales&quot;},{&quot;label&quot;:&quot;Marvel&#39;s Spider-Man Remastered PS5&quot;,&quot;value&quot;:&quot;marvel_s_spider-man_remastered&quot;},{&quot;label&quot;:&quot;Marvel&#39;s Spider-Man (PS4)&quot;,&quot;value&quot;:&quot;spider_man&quot;},{&quot;label&quot;:&quot;Ratchet \u0026 Clank (2016)&quot;,&quot;value&quot;:&quot;ratchet&quot;},{&quot;label&quot;:&quot;Sunset Overdrive&quot;,&quot;value&quot;:&quot;sunset&quot;},{&quot;label&quot;:&quot;Stormland&quot;,&quot;value&quot;:&quot;stormland&quot;},{&quot;label&quot;:&quot;The Unspoken&quot;,&quot;value&quot;:&quot;unspoken&quot;},{&quot;label&quot;:&quot;Edge of Nowhere&quot;,&quot;value&quot;:&quot;edge&quot;},{&quot;label&quot;:&quot;Feral Rites&quot;,&quot;value&quot;:&quot;feral&quot;},{&quot;label&quot;:&quot;Resistance&quot;,&quot;value&quot;:&quot;resistance&quot;},{&quot;label&quot;:&quot;Fuse&quot;,&quot;value&quot;:&quot;fuse&quot;},{&quot;label&quot;:&quot;Song of the Deep&quot;,&quot;value&quot;:&quot;song&quot;},{&quot;label&quot;:&quot;Seedling&quot;,&quot;value&quot;:&quot;seedling&quot;},{&quot;label&quot;:&quot;Strangelets&quot;,&quot;value&quot;:&quot;strangelets&quot;}]" aria-required="true" aria-labelledby="request_custom_fields_21947402_label" />
+      
+      
+    </div>
+
+    
+  
     <div class="form-field string  required  request_custom_fields_21828221" >
       <label id="request_custom_fields_21828221_label" for="request_custom_fields_21828221">Platform</label>
       <input type="hidden" name="request[custom_fields][21828221]" id="request_custom_fields_21828221" autocomplete="off" data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;PlayStation 5&quot;,&quot;value&quot;:&quot;playstation_5&quot;},{&quot;label&quot;:&quot;PlayStation 4 Pro&quot;,&quot;value&quot;:&quot;playstation_4_pro&quot;},{&quot;label&quot;:&quot;PlayStation 4 Slim&quot;,&quot;value&quot;:&quot;playstation_4_slim&quot;},{&quot;label&quot;:&quot;PlayStation 4&quot;,&quot;value&quot;:&quot;playstation&quot;}]" aria-required="true" aria-labelledby="request_custom_fields_21828221_label" />
+      
+      
     </div>
 
+    
+  
     <div class="form-field string  required  request_custom_fields_8391057831821" >
       <label id="request_custom_fields_8391057831821_label" for="request_custom_fields_8391057831821">Platform</label>
       <input type="hidden" name="request[custom_fields][8391057831821]" id="request_custom_fields_8391057831821" autocomplete="off" data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Steam&quot;,&quot;value&quot;:&quot;steam&quot;},{&quot;label&quot;:&quot;Epic&quot;,&quot;value&quot;:&quot;epic&quot;}]" aria-required="true" aria-labelledby="request_custom_fields_8391057831821_label" />
+      
+      
     </div>
 
+    
+  
     <div class="form-field string  required  request_custom_fields_360037826292" >
       <label id="request_custom_fields_360037826292_label" for="request_custom_fields_360037826292">Disc or Download?</label>
       <input type="hidden" name="request[custom_fields][360037826292]" id="request_custom_fields_360037826292" autocomplete="off" data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Disc (Physical Copy)&quot;,&quot;value&quot;:&quot;disc&quot;},{&quot;label&quot;:&quot;Download (Digital Copy)&quot;,&quot;value&quot;:&quot;digital&quot;}]" aria-required="true" aria-labelledby="request_custom_fields_360037826292_label" />
+      
+      
     </div>
 
+    
+  
     <div class="form-field string  optional  request_custom_fields_360038797012" >
       <label id="request_custom_fields_360038797012_label" for="request_custom_fields_360038797012">Select Issue Type</label>
-      <input type="hidden" name="request[custom_fields][360038797012]" id="request_custom_fields_360038797012" autocomplete="off" data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Audio/Speech&quot;,&quot;value&quot;:&quot;audio/speech&quot;},{&quot;label&quot;:&quot;Cognitive&quot;,&quot;value&quot;:&quot;cognitive&quot;},{&quot;label&quot;:&quot;Controls&quot;,&quot;value&quot;:&quot;controls&quot;},{&quot;label&quot;:&quot;General&quot;,&quot;value&quot;:&quot;general&quot;},{&quot;label&quot;:&quot;Visuals&quot;,&quot;value&quot;:&quot;visuals&quot;}]" aria-required="false" aria-labelledby="request_custom_fields_360038797012_label" /> 
+      <input type="hidden" name="request[custom_fields][360038797012]" id="request_custom_fields_360038797012" autocomplete="off" data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;Audio/Speech&quot;,&quot;value&quot;:&quot;audio/speech&quot;},{&quot;label&quot;:&quot;Cognitive&quot;,&quot;value&quot;:&quot;cognitive&quot;},{&quot;label&quot;:&quot;Controls&quot;,&quot;value&quot;:&quot;controls&quot;},{&quot;label&quot;:&quot;General&quot;,&quot;value&quot;:&quot;general&quot;},{&quot;label&quot;:&quot;Visuals&quot;,&quot;value&quot;:&quot;visuals&quot;}]" aria-required="false" aria-labelledby="request_custom_fields_360038797012_label" />
+      
+      
     </div> -->
 
-
-
-          <div class="form-field string  required  request_custom_fields_360038509932">
-            <label id="request_custom_fields_360038509932_label" for="request_custom_fields_360038509932">What country
-              are you located in?</label>
-            <input type="text" name="request[custom_fields][360038509932]" id="request_custom_fields_360038509932"
-              aria-required="true" aria-describedby="request_custom_fields_360038509932_hint"
-              aria-labelledby="request_custom_fields_360038509932_label" />
-
-            <p id="request_custom_fields_360038509932_hint">We need this info to help determine what version of the game
-              you own.</p>
-          </div>
-
-          <div class="form-field string  required  request_subject">
-            <label id="request_subject_label" for="request_subject">Subject</label>
-            <input type="text" name="request[subject]" id="request_subject" maxlength="150" size="150"
-              aria-required="true" aria-labelledby="request_subject_label" />
-          </div>
-
-          <div class="suggestion-list" data-hc-class="searchbox" data-hc-suggestion-list="true"></div>
-
-          <div class="form-field text  required  request_description">
-            <label id="request_description_label" for="request_description">Description</label>
-            <textarea name="request[description]" id="request_description" aria-required="true"
-              aria-describedby="request_description_hint" aria-labelledby="request_description_label">
-</textarea><input type="hidden" name="request[description_mimetype]" id="request_description_mimetype" value="text/plain"
-              style="display: none;" autocomplete="off" />
-
-            <p id="request_description_hint">Please enter the details of your request. Please include as much detail as
-              possible! If it would be easier to show us the problem than type it out, feel free to attach a screenshot
-              below.</p>
-          </div>
-
-          <div class="form-field string  required  request_custom_fields_360044151372">
-            <label id="request_custom_fields_360044151372_label" for="request_custom_fields_360044151372">PSN ID</label>
-            <input type="text" name="request[custom_fields][360044151372]" id="request_custom_fields_360044151372"
-              aria-required="true" aria-labelledby="request_custom_fields_360044151372_label" />
-          </div>
-
-          <script
-            data-conditional-fields="[{&quot;parent_field_id&quot;:&quot;request_custom_fields_360020880831&quot;,&quot;value&quot;:&quot;game_support&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_360020880831&quot;,&quot;value&quot;:&quot;accessibility&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_360038797012&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;marvel_s_spider-man__miles_morales&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_21828221&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360037826292&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360038509932&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360044151372&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;spider_man&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_21828221&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360037826292&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360044151372&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;ratchet&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_21828221&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360037826292&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;marvel_s_spider-man_remastered&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_360038509932&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360044151372&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;ratchet___clank__rift_apart&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_360038509932&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360044151372&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;marvel_s_spider-man_remastered_pc&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_8391057831821&quot;,&quot;is_required&quot;:true}]}]"></script>
-
-          <div class="form-field">
-            <label for="request-attachments">
-              Attachments
-            </label>
-            <div id="upload-dropzone" class="upload-dropzone">
-              <input type="file" multiple="true" id="request-attachments" data-fileupload="true"
-                data-dropzone="upload-dropzone" data-error="upload-error" data-create-url="/hc/en-us/request_uploads"
-                data-name="request[attachments][]" data-pool="request-attachments-pool" data-delete-confirm-msg=""
-                aria-describedby="upload-error" />
-              <span>
-                <a>Add file</a> or drop files here
-              </span>
-            </div>
-
-            <div id="upload-error" class="notification notification-error notification-inline">
-              <span data-upload-error-message></span>
-            </div>
-
-
-            <ul id="request-attachments-pool" class="upload-pool" data-template="upload-template"></ul>
-
-            <script type="text/html" id="upload-template">
-            <li class="upload-item" data-upload-item>
-              <a class="upload-link" target="_blank" data-upload-link></a>
-              <p class="upload-path" data-upload-path></p>
-              <p class="upload-path" data-upload-size></p>
-              <p data-upload-issue class="notification notification-alert notification-inline" aria-hidden="true"></p>
-              <span class="upload-remove" data-upload-remove></span>
-              <div class="upload-progress" data-upload-progress></div>
-              <input type="hidden">
-            </li>
-            </script>
-
-          </div>
-
-          <footer>
-            <input type="submit" name="commit" value="Submit" />
-            <!-- <button (click)="submit()">SUB</button> -->
-          </footer>
-
-        </form>
-      </div>
+    
+  
+    <div class="form-field string  required  request_custom_fields_360038509932" >
+      <label id="request_custom_fields_360038509932_label" for="request_custom_fields_360038509932">What country are you located in?</label>
+      <input type="text" name="request[custom_fields][360038509932]" id="request_custom_fields_360038509932" aria-required="true" aria-describedby="request_custom_fields_360038509932_hint" aria-labelledby="request_custom_fields_360038509932_label" />
+      
+      <p id="request_custom_fields_360038509932_hint">We need this info to help determine what version of the game you own.</p>
     </div>
+
+    
+  
+    <div class="form-field string  required  request_subject" >
+      <label id="request_subject_label" for="request_subject">Subject</label>
+      <input type="text" name="request[subject]" id="request_subject" maxlength="150" size="150" aria-required="true" aria-labelledby="request_subject_label" />
+      
+      
+    </div>
+
+    
+      <div class="suggestion-list" data-hc-class="searchbox" data-hc-suggestion-list="true"></div>
+    
+  
+    <div class="form-field text  required  request_description" >
+      <label id="request_description_label" for="request_description">Description</label>
+      <textarea name="request[description]" id="request_description" aria-required="true" aria-describedby="request_description_hint" aria-labelledby="request_description_label">
+</textarea><input type="hidden" name="request[description_mimetype]" id="request_description_mimetype" value="text/plain" style="display: none;" autocomplete="off" />
+      
+      <p id="request_description_hint">Please enter the details of your request. Please include as much detail as possible! If it would be easier to show us the problem than type it out, feel free to attach a screenshot below.</p>
+    </div>
+
+    
+  
+    <div class="form-field string  required  request_custom_fields_360044151372" >
+      <label id="request_custom_fields_360044151372_label" for="request_custom_fields_360044151372">PSN ID</label>
+      <input type="text" name="request[custom_fields][360044151372]" id="request_custom_fields_360044151372" aria-required="true" aria-labelledby="request_custom_fields_360044151372_label" />
+      
+      
+    </div>
+
+    
+  
+
+  <script data-conditional-fields="[{&quot;parent_field_id&quot;:&quot;request_custom_fields_360020880831&quot;,&quot;value&quot;:&quot;game_support&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_360020880831&quot;,&quot;value&quot;:&quot;accessibility&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_360038797012&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;marvel_s_spider-man__miles_morales&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_21828221&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360037826292&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360038509932&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360044151372&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;spider_man&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_21828221&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360037826292&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360044151372&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;ratchet&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_21828221&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360037826292&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;marvel_s_spider-man_remastered&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_360038509932&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360044151372&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;ratchet___clank__rift_apart&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_360038509932&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_360044151372&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_21947402&quot;,&quot;value&quot;:&quot;marvel_s_spider-man_remastered_pc&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_8391057831821&quot;,&quot;is_required&quot;:true}]}]"></script>
+
+  <div class="form-field">
+  <label for="request-attachments">
+    Attachments
+  </label>
+  <div id="upload-dropzone" class="upload-dropzone">
+  <input type="file" multiple="true" id="request-attachments"
+    data-fileupload="true"
+    data-dropzone="upload-dropzone"
+    data-error="upload-error"
+    data-create-url="/hc/en-us/request_uploads"
+    data-name="request[attachments][]"
+    data-pool="request-attachments-pool"
+    data-delete-confirm-msg=""
+    aria-describedby="upload-error" />
+  <span>
+    <a>Add file</a> or drop files here
+  </span>
+</div>
+
+<div id="upload-error" class="notification notification-error notification-inline">
+  <span data-upload-error-message></span>
+</div>
+
+
+  <ul id="request-attachments-pool" class="upload-pool" data-template="upload-template"></ul>
+
+<script type="text/html" id="upload-template">
+<li class="upload-item" data-upload-item>
+  <a class="upload-link" target="_blank" data-upload-link></a>
+  <p class="upload-path" data-upload-path></p>
+  <p class="upload-path" data-upload-size></p>
+  <p data-upload-issue class="notification notification-alert notification-inline" aria-hidden="true"></p>
+  <span class="upload-remove" data-upload-remove></span>
+  <div class="upload-progress" data-upload-progress></div>
+  <input type="hidden">
+</li>
+</script>
+
+
+</div>
+
+
+  
+  
+
+  
+
+  <footer>
+<input type="submit" name="commit" value="Submit" />
+<!-- <button (click)="submit()">SUB</button> -->
+</footer>
+
+</form>
+
+
+
+  </div>
+</div>
 
   </main>
 
-  <app-footer-three></app-footer-three>
+<app-footer-three></app-footer-three>
+
+  
 </div>
+
+
+
+
+
+
