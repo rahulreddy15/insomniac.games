@@ -1,5 +1,5 @@
 import {
-  AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnDestroy, OnInit, ViewChild
+  AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnDestroy, OnInit, ViewChild
 } from '@angular/core';
 
 @Component({
@@ -11,7 +11,8 @@ export class VideoEmbedComponent implements AfterViewInit, OnDestroy {
   @ViewChild('demoYouTubePlayer') demoYouTubePlayer: ElementRef<HTMLDivElement>;
 
   apiLoaded = false;
-  videoId = "Tsf5Wjb1uAM";
+  // videoId = "Tsf5Wjb1uAM";
+  @Input() videoId: string;
   width = window.innerWidth;
   height = window.innerHeight;
 

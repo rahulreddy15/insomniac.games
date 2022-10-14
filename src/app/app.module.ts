@@ -26,6 +26,11 @@ import { GamesFeaturedTitlesComponent } from './games-featured-titles/games-feat
 import { GamesCurrentTitlesComponent } from './games-current-titles/games-current-titles.component';
 import { GamesNewsComponent } from './games-news/games-news.component';
 import { GamesLegacyComponent } from './games-legacy/games-legacy.component';
+import { CareersOpportunitiesComponent } from './careers-opportunities/careers-opportunities.component';
+import { CareersLifeAtComponent } from './careers-life-at/careers-life-at.component';
+import { CareersBenefitsComponent } from './careers-benefits/careers-benefits.component';
+import { CareersAwardsComponent } from './careers-awards/careers-awards.component';
+import { CareersContactComponent } from './careers-contact/careers-contact.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +55,12 @@ import { GamesLegacyComponent } from './games-legacy/games-legacy.component';
     GamesFeaturedTitlesComponent,
     GamesCurrentTitlesComponent,
     GamesNewsComponent,
-    GamesLegacyComponent
+    GamesLegacyComponent,
+    CareersOpportunitiesComponent,
+    CareersLifeAtComponent,
+    CareersBenefitsComponent,
+    CareersAwardsComponent,
+    CareersContactComponent
   ],
   imports: [
     BrowserModule,

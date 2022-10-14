@@ -9,6 +9,8 @@ export class CareersComponent implements OnInit {
 
   constructor() { }
 
+  videoId = 'tlgCHyBbQBM'
+
   ngOnInit(): void {
   }
 
