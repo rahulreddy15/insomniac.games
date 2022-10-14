@@ -31,6 +31,10 @@ import { CareersLifeAtComponent } from './careers-life-at/careers-life-at.compon
 import { CareersBenefitsComponent } from './careers-benefits/careers-benefits.component';
 import { CareersAwardsComponent } from './careers-awards/careers-awards.component';
 import { CareersContactComponent } from './careers-contact/careers-contact.component';
+import { NewsMainContentComponent } from './news-main-content/news-main-content.component';
+import { NewsFeaturedArticleComponent } from './news-featured-article/news-featured-article.component';
+import { NewsRecentComponent } from './news-recent/news-recent.component';
+import { NewsCategoriesComponent } from './news-categories/news-categories.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +64,11 @@ import { CareersContactComponent } from './careers-contact/careers-contact.compo
     CareersLifeAtComponent,
     CareersBenefitsComponent,
     CareersAwardsComponent,
-    CareersContactComponent
+    CareersContactComponent,
+    NewsMainContentComponent,
+    NewsFeaturedArticleComponent,
+    NewsRecentComponent,
+    NewsCategoriesComponent
   ],
   imports: [
     BrowserModule,
