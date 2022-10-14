@@ -1,10 +1,28 @@
-body {
-    padding-bottom: 120px;
+.footer-section.footer-gray {
+    padding: 75px 0;
+    background-color: #293237;
+    color: #78B1BB!important;
 }
-.footer {
-    position: absolute;
-    left: 0;
-    bottom:0;
-    width: 100%;
-    height: 144px;
+
+.footer-section.footer-gray a {
+    color: #78B1BB!important;
+    transition: .5s;
+}
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-top: 5px;
+}
+
+.fa-ul, ul:not(.browser-default) li {
+    list-style-type: none;
+}
+
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 0;
 }
