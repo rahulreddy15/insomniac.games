@@ -21,6 +21,11 @@ import { SupportCardsComponentComponent } from './support-cards-component/suppor
 import { FooterThreeComponent } from './footer-three/footer-three.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { GamesFeaturedTitlesComponent } from './games-featured-titles/games-featured-titles.component';
+import { GamesCurrentTitlesComponent } from './games-current-titles/games-current-titles.component';
+import { GamesNewsComponent } from './games-news/games-news.component';
+import { GamesLegacyComponent } from './games-legacy/games-legacy.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     VisionComponent,
     SupportCardsComponentComponent,
     FooterThreeComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    SignInComponent,
+    GamesFeaturedTitlesComponent,
+    GamesCurrentTitlesComponent,
+    GamesNewsComponent,
+    GamesLegacyComponent
   ],
   imports: [
     BrowserModule,

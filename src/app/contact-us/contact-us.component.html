@@ -20,7 +20,7 @@
       
       <a class="submit-a-request" routerLink="/contact-us" href="/hc/en-us/requests/new">Contact Us</a>
     </nav>
-      <a class="login" data-auth-action="signin" role="button" rel="nofollow" title="Opens a dialog">Sign in</a>
+      <a class="login" routerLink="/signin" data-auth-action="signin" role="button" rel="nofollow" title="Opens a dialog">Sign in</a>
   </div>
 </header>
 
@@ -54,7 +54,9 @@
   </h1>
 
   <div class="form">
-    <form id="new_request" class="request-form" data-form="" data-form-type="request" action="/hc/en-us/requests" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="" />
+    <form id="new_request" class="request-form" >
+        <!-- <input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" />
+        <input type="hidden" name="authenticity_token" value="" /> -->
 
 
 
@@ -64,7 +66,7 @@
   <input type="hidden" name="request[ticket_form_id]" id="request_ticket_form_id" value="360000473991" autocomplete="off" />
 
   <div class="form-field string required request_anonymous_requester_email"><label for="request_anonymous_requester_email">Your email address</label>
-<input type="text" name="request[anonymous_requester_email]" id="request_anonymous_requester_email" aria-required="true" />
+<input type="text" id="email" name="request[anonymous_requester_email]" id="request_anonymous_requester_email" aria-required="true" />
 </div>
 
   
@@ -219,7 +221,10 @@
 
   
 
-  <footer><input type="submit" name="commit" value="Submit" /></footer>
+  <footer>
+<input type="submit" name="commit" value="Submit" />
+<!-- <button (click)="submit()">SUB</button> -->
+</footer>
 
 </form>
 

@@ -16,8 +16,8 @@
       
       <a class="submit-a-request" routerLink="/contact-us" href="/hc/en-us/requests/new">Contact Us</a>
     </nav>
-      <a class="login" data-auth-action="signin" role="button" rel="nofollow" title="Opens a dialog">Sign in</a>
-      <!-- <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button> -->
+      <a routerLink="/signin" class="login" data-auth-action="signin" role="button" rel="nofollow" title="Opens a dialog">Sign in</a>
+      <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
 
   </div>
 </header>
@@ -71,72 +71,20 @@
 
 
 
-<ng-template #content let-modal>
 
 
-
-
-        
+  <ng-template #content let-modal>
     <div class="modal-header">
+      <h4 class="modal-title">Modal title</h4>
       <h2 class="title" id="signin_title">
         Sign in to Insomniac Games Support
       </h2>
       <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
     </div>
     <div class="modal-body">
-      <!-- <form> -->
-        <div class="services internal">
-            <form autocomplete="off" id="login-form" class="" action="https://insomniac.zendesk.com/access/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="HHAjrP/0DX18FIp+KUcw5AK82dJg7mL+aQeMYy3WVG0=" />
-              <input type="hidden" name="return_to_on_failure" id="return_to_on_failure" value="/auth/v2/login/signin?return_to=https%3A%2F%2Fsupport.insomniac.games%2Fhc%2Fen-us%2Frequests%2Fnew&amp;theme=hc&amp;locale=en-us&amp;brand_id=175084&amp;auth_origin=175084%2Ctrue%2Ctrue&amp;browser=chrome" />
-              <input type="hidden" name="return_to" id="return_to" value="https://support.insomniac.games/auth/v2/login/signed_in?auth_origin=175084%2Ctrue%2Ctrue&amp;brand_id=175084&amp;theme=hc" />
-              <input type="hidden" name="brand_id" id="brand_id" value="175084" />
-              <input type="hidden" name="theme" id="theme" value="hc" />
-              <input type="hidden" name="auth_origin" id="auth_origin" value="175084,true,true" />
-              <input type="hidden" name="form_origin" id="form_origin" value="hc" />
-              <div class="credentials">
-                <label for="user_email">Email</label>
-                <input autofocus="autofocus" autocomplete="on" required="required" type="email" name="user[email]" id="user_email" />
-                <label for="user_password">Password</label>
-                <input autocomplete="off" required="required" type="password" name="user[password]" id="user_password" />
-              </div>
-       
-  
-              <div class="clear"></div>
-  
-              <input type="submit" name="commit" value="Sign in" id="sign-in-submit-button" class="c-btn c-btn--primary auth-actions" data-disable-with="Sign in" />
-  </form>
-            <div class="clear"></div>
-          </div>
-      <!-- </form> -->
-
-
-
-
-
-      
-
-
-
-
+      <app-sign-in></app-sign-in>
     </div>
     <div class="modal-footer">
-
-      <div class="footnotes">
-        <div class="sign_up question">
-          <span class="question-text">New to Insomniac Games Support?</span>
-          <a class="auth-actions" href="https://insomniac.zendesk.com/auth/v2/login/registration?auth_origin=175084%2Ctrue%2Ctrue&amp;brand_id=175084&amp;return_to=https%3A%2F%2Fsupport.insomniac.games%2Fhc%2Fen-us%2Frequests%2Fnew&amp;theme=hc">Sign up</a>
-        </div>
-
-        <p class="get_password question">
-        <span class="question-text">Have you emailed us?</span>
-        <a class="auth-actions" href="https://insomniac.zendesk.com/auth/v2/login/password_reset?auth_origin=175084%2Ctrue%2Ctrue&amp;brand_id=175084&amp;return_to=https%3A%2F%2Fsupport.insomniac.games%2Fhc%2Fen-us%2Frequests%2Fnew&amp;theme=hc">Get a password</a>
-        </p>
-
-        <p>If you've communicated with our support staff through email previously, you're already registered. <br /> You probably don't have a password yet, though.</p>
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
     </div>
-    </div>
-
-    
-
-
   </ng-template>

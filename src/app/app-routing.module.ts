@@ -6,6 +6,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GamesComponent } from './games/games.component';
 import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 import { SupportComponent } from './support/support.component';
 
 const routes: Routes = [
@@ -32,6 +33,9 @@ const routes: Routes = [
   },
   {
     path: 'contact-us', component: ContactUsComponent
+  },
+  {
+    path: 'signin', component: SignInComponent
   },
 ];
 
